@@ -120,7 +120,7 @@ document.querySelector("#submit").addEventListener("click", () => {
           examTime: timeTaken.innerText,
           status: grade.status,
         },
-      ])
+      ]),
     );
   } else {
     localStorage.setItem(
@@ -131,7 +131,7 @@ document.querySelector("#submit").addEventListener("click", () => {
           examTime: timeTaken.innerText,
           status: grade.status,
         },
-      ])
+      ]),
     );
   }
 
@@ -148,7 +148,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     <p class="text-sm flex justify-center items-center gap-2">
       Total Time: <span class="text-xl text-orange-500">${timeTaken.innerText.replace(
         "sec",
-        ""
+        "",
       )}<span class="text-xs">sec</span></span>
     </p>
   </div>
@@ -172,7 +172,7 @@ document.querySelector("#submit").addEventListener("click", () => {
       <div>${item.marks}/60</div>
       <div>${item.status}</div>
       <div>${item.examTime}</div>
-      </div>`
+      </div>`,
       )
       ?.join("")}`
       : ""
@@ -184,3 +184,17 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+function createABlog() {
+  // document.getElementById("post-btn").addEventListener("click", () => {
+  //   const adminName = prompt("Admin Name");
+  //   if (adminName !== "Allsamir") return;
+  // });
+}
+document.getElementById("form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  let question = e.target.question.value;
+  let answer = e.target.answer.value;
+  console.log(question, answer);
+});
+createABlog();

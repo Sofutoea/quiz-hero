@@ -17,6 +17,12 @@
       referrerpolicy="no-referrer"
     />
     <title>Quiz Hero | blog</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -50,7 +56,10 @@
     </header>
 
     <main>
-      <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+      <section
+        class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10 text-black"
+        id="question-container"
+      >
         <article class="space-y-3 border-b-2 pb-5">
           <h2 class="text-xl font-bold">
             <span class="text-red-600">Q1 :</span> What is JavaScript and what
@@ -121,6 +130,46 @@
           </p>
         </article>
       </section>
+      <section
+        class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 pt-10 pb-20"
+      >
+        <div class="card shrink-0 w-full shadow-2xl bg-white">
+          <form class="card-body" id="form">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-black">Question</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Question"
+                class="input input-bordered bg-white text-black"
+                required
+                name="question"
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text text-black">Answer</span>
+              </label>
+              <textarea
+                class="textarea textarea-bordered bg-white text-black"
+                rows="10"
+                placeholder="Answer"
+                name="answer"
+              ></textarea>
+            </div>
+            <div class="form-control mt-6">
+              <button
+                class="btn btn-success uppercase text-white"
+                id="post-btn"
+              >
+                Post
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
+    <script src="../blog.js"></script>
   </body>
 </html>

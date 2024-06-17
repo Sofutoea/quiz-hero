@@ -1,126 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Quiz Hero | blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              common: ["Rubik", "sans-serif"],
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Quiz Hero || blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            common: ["Rubik", "sans-serif"],
           },
         },
-      };
-    </script>
-  </head>
-  <body class="bg-white font-common">
-    <header class="h-16 flex items-center shadow-sm">
-      <nav class="flex justify-between items-center w-9/12 mx-auto">
-        <div class="text-zinc-800 font-bold uppercase">
-          <h1 class="text-lg">Quiz <span class="text-green-700">Blog</span></h1>
-          <p class="text-[10px] font-normal capitalize -mt-1">
-            Get ready to Quiz and be amazed!
-          </p>
-        </div>
-        <a
-          href="/index.html"
-          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
-        >
-          Exam
-        </a>
-      </nav>
-    </header>
+      },
+    };
+  </script>
+</head>
 
-    <main>
-      <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
-        <article class="space-y-3 border-b-2 pb-5">
-          <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q1 :</span> What is JavaScript and what
-            is it used for?
-          </h2>
-          <p class="text-justify">
-            <span class="text-green-600">Answer :</span> JavaScript is a
-            high-level, dynamic programming language commonly used for web
-            development. It allows developers to create interactive elements on
-            websites, such as form validation, dynamic content updates, and
-            animations. JavaScript can be used both on the client-side and
-            server-side.
-          </p>
-        </article>
-        <article class="space-y-3 border-b-2 pb-5">
-          <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q2 :</span> What are closures in
-            JavaScript?
-          </h2>
-          <p class="text-justify">
-            <span class="text-green-600">Answer :</span> Closures are a feature
-            in JavaScript where an inner function has access to the outer
-            (enclosing) function's variables. This includes the outer function's
-            scope chain, allowing the inner function to remember and access
-            variables from its outer scope even after the outer function has
-            executed.
-          </p>
-        </article>
-        <article class="space-y-3 border-b-2 pb-5">
-          <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q3 :</span> What is the difference
-            between `==` and `===` in JavaScript?
-          </h2>
-          <p class="text-justify">
-            <span class="text-green-600">Answer :</span> In JavaScript, `==` is
-            the equality operator that compares two values for equality after
-            converting both values to a common type. In contrast, `===` is the
-            strict equality operator that compares both the value and the type
-            without performing type conversion. Therefore, `===` is generally
-            preferred for comparison.
-          </p>
-        </article>
-        <article class="space-y-3 border-b-2 pb-5">
-          <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q4 :</span> What are JavaScript Promises?
-          </h2>
-          <p class="text-justify">
-            <span class="text-green-600">Answer :</span> Promises in JavaScript
-            are objects representing the eventual completion or failure of an
-            asynchronous operation. They allow developers to handle asynchronous
-            code more effectively by chaining `.then()` and `.catch()` methods,
-            improving code readability and manageability over traditional
-            callback-based approaches.
-          </p>
-        </article>
-        <article class="space-y-3 border-b-2 pb-5">
-          <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q5 :</span> How does the `let` keyword
-            differ from `var` in JavaScript?
-          </h2>
-          <p class="text-justify">
-            <span class="text-green-600">Answer :</span> The `let` keyword
-            declares block-scoped variables, meaning they are only accessible
-            within the block they are defined. In contrast, `var` declares
-            function-scoped or globally-scoped variables, depending on the
-            context. Additionally, variables declared with `let` are not hoisted
-            to the top of their block, unlike `var`.
-          </p>
-        </article>
-      </section>
-    </main>
-  </body>
+<body class="bg-white font-common">
+  <header class="h-16 flex items-center shadow-sm">
+    <nav class="flex justify-between items-center w-9/12 mx-auto">
+      <div class="text-zinc-800 font-bold uppercase">
+        <h1 class="text-lg">Quiz <span class="text-green-700">=Blog</span></h1>
+        <p class="text-[10px] font-normal capitalize -mt-1">
+          Get ready to Quiz and be amazed!
+        </p>
+      </div>
+      <a href="index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+        Exam
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section class="lg:w-9/12 mx-auto md:w-[90%] w-[95%] space-y-5 py-10">
+      <article class="space-y-3 border-b-2 pb-5">
+        <h2 class="text-xl font-bold">Q1:
+          <span class="text-red-600">What is JavaScript, and how is it used in web development?</span>
+        </h2>
+        <p class="text-justify"><span class="text-green-600">Answer:</span> JavaScript is a versatile, high-level programming language primarily used for creating and controlling dynamic website content. It allows developers to implement complex features such as interactive forms, animations, and real-time updates, enhancing the user experience.</p>
+      </article>
+
+      <article class="space-y-3 border-b-2 pb-5">
+        <h2 class="text-xl font-bold">Q2:
+          <span class="text-red-600">What is the difference between let, var, and const in JavaScript?</span>
+        </h2>
+        <p class="text-justify"><span class="text-green-600">Answer:</span> `var` is function-scoped and can be redeclared, `let` is block-scoped and cannot be redeclared within the same block, and `const` is also block-scoped but is used for variables that should not be reassigned. `const` ensures immutability for primitive data types but does not make objects immutable.</p>
+      </article>
+
+      <article class="space-y-3 border-b-2 pb-5">
+        <h2 class="text-xl font-bold">Q3:
+          <span class="text-red-600">What is a JavaScript promise, and how does it work?</span>
+        </h2>
+        <p class="text-justify"><span class="text-green-600">Answer:</span> A JavaScript promise is an object representing the eventual completion or failure of an asynchronous operation. Promises provide a way to handle asynchronous tasks by allowing methods such as `then` for handling resolved values and `catch` for handling errors, improving code readability and manageability.</p>
+      </article>
+
+      <article class="space-y-3 border-b-2 pb-5">
+        <h2 class="text-xl font-bold">Q4:
+          <span class="text-red-600">How does event delegation work in JavaScript?</span>
+        </h2>
+        <p class="text-justify"><span class="text-green-600">Answer:</span> Event delegation is a technique where a single event listener is added to a parent element to manage events for its child elements. By leveraging the event bubbling mechanism, the parent element can handle events for dynamically added or removed child elements, reducing memory usage and improving performance.</p>
+      </article>
+
+      <article class="space-y-3">
+        <h2 class="text-xl font-bold">Q5:
+          <span class="text-red-600">What is the Document Object Model (DOM) in JavaScript?</span>
+        </h2>
+        <p class="text-justify"><span class="text-green-600">Answer:</span> The DOM is a programming interface for web documents, representing the page so that programs can change the document structure, style, and content. JavaScript can interact with the DOM to manipulate HTML elements, allowing developers to create dynamic and interactive web pages.</p>
+      </article>
+    </section>
+
+  </main>
+</body>
+
 </html>

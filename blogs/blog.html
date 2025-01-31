@@ -120,7 +120,125 @@
             to the top of their block, unlike `var`.
           </p>
         </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q6 :</span> What is the difference
+            between `null` and `undefined` in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> `null` is an explicit
+            assignment that represents the intentional absence of a value, while
+            `undefined` means a variable has been declared but has not been
+            assigned a value. `null` must be manually assigned, whereas
+            `undefined` is the default state of uninitialized variables.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q7 :</span> What is the purpose of the
+            `async` and `await` keywords in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> The `async` keyword is
+            used to define an asynchronous function, while `await` is used
+            inside an `async` function to pause execution until a Promise
+            resolves. This allows developers to write asynchronous code in a
+            more readable and synchronous-like manner.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q8 :</span> What is event delegation in
+            JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> Event delegation is a
+            technique where a parent element handles events for its child
+            elements, even if they are added dynamically. This is achieved using
+            event bubbling and the `event.target` property, which improves
+            performance by reducing the number of event listeners.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q9 :</span> What is the difference
+            between function declarations and function expressions in
+            JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> A
+            <strong>function declaration</strong> is a function defined with the
+            `function` keyword that is hoisted to the top of its scope, allowing
+            it to be called before its definition. A
+            <strong>function expression</strong> assigns a function to a
+            variable and is not hoisted, meaning it cannot be called before it
+            is defined.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q10 :</span> What is the purpose of the
+            `map()` method in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> The `map()` method is
+            used to create a new array by applying a callback function to each
+            element of an existing array. It does not modify the original array
+            and is useful for transforming data efficiently.
+          </p>
+        </article>
       </section>
     </main>
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="md:flex md:justify-between md:items-center">
+          <!-- Company Info -->
+          <div class="mb-8 md:mb-0">
+            <h2 class="text-lg font-bold text-white">Quiz Hero Blog</h2>
+            <p class="mt-4 max-w-xs text-sm">Empowering developers through knowledge sharing and interactive learning.</p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+            <div>
+              <h3 class="text-sm font-semibold text-white">Quick Links</h3>
+              <ul class="mt-4 space-y-2">
+                <li><a href="/index.html" class="text-sm hover:text-green-500 transition-colors">Home</a></li>
+                <li><a href="#" class="text-sm hover:text-green-500 transition-colors">About</a></li>
+                <li><a href="/index.html" class="text-sm hover:text-green-500 transition-colors">Exam</a></li>
+              </ul>
+            </div>
+    
+            <!-- Social Links -->
+            <div>
+              <h3 class="text-sm font-semibold text-white">Connect</h3>
+              <div class="mt-4 flex space-x-4">
+                <a href="#" class="hover:text-green-500 transition-colors">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="hover:text-green-500 transition-colors">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="hover:text-green-500 transition-colors">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="mt-12 border-t border-gray-800 pt-8 text-center">
+          <p class="text-xs text-gray-400">
+            &copy; 2023 Quiz Hero Blog. All rights reserved.<br>
+            Made with <i class="fas fa-heart text-red-500"></i> by developers for developers
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

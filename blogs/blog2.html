@@ -19,16 +19,16 @@
     <title>Quiz Hero | blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              common: ["Rubik", "sans-serif"],
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                common: ["Rubik", "sans-serif"],
+              },
             },
           },
-        },
-      };
-    </script>
+        };
+      </script>
     <script>
       // JavaScript to highlight the active page
       window.onload = function () {
@@ -46,7 +46,6 @@
         });
       };
     </script>
-
   </head>
   <body class="bg-white font-common">
     <header class="h-16 flex items-center shadow-sm">
@@ -68,73 +67,75 @@
 
     <main>
       <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+        <!-- Updated questions for page 2 -->
         <article class="space-y-3 border-b-2 pb-5">
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q1 :</span> What is JavaScript and what
-            is it used for?
+            <span class="text-red-600">Q6 :</span> What are the advantages of
+            using a framework in web development?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> JavaScript is a
-            high-level, dynamic programming language commonly used for web
-            development. It allows developers to create interactive elements on
-            websites, such as form validation, dynamic content updates, and
-            animations. JavaScript can be used both on the client-side and
-            server-side.
+            <span class="text-green-600">Answer :</span> Using a framework in
+            web development provides several benefits, including faster
+            development, better code structure, reusability of components, and
+            easier maintenance. Frameworks come with built-in tools and
+            libraries that simplify complex tasks like routing, state
+            management, and handling requests.
           </p>
         </article>
         <article class="space-y-3 border-b-2 pb-5">
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q2 :</span> What are closures in
-            JavaScript?
+            <span class="text-red-600">Q7 :</span> What is the difference
+            between front-end and back-end development?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> Closures are a feature
-            in JavaScript where an inner function has access to the outer
-            (enclosing) function's variables. This includes the outer function's
-            scope chain, allowing the inner function to remember and access
-            variables from its outer scope even after the outer function has
-            executed.
+            <span class="text-green-600">Answer :</span> Front-end development
+            refers to the user interface and experience of a website or
+            application, which users directly interact with. Back-end
+            development involves the server-side logic, databases, and
+            application functionality that power the front-end. Together, they
+            work to create a fully functional web application.
           </p>
         </article>
         <article class="space-y-3 border-b-2 pb-5">
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q3 :</span> What is the difference
-            between `==` and `===` in JavaScript?
+            <span class="text-red-600">Q8 :</span> What are APIs and why are
+            they important in web development?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> In JavaScript, `==` is
-            the equality operator that compares two values for equality after
-            converting both values to a common type. In contrast, `===` is the
-            strict equality operator that compares both the value and the type
-            without performing type conversion. Therefore, `===` is generally
-            preferred for comparison.
+            <span class="text-green-600">Answer :</span> APIs (Application
+            Programming Interfaces) allow different software systems to
+            communicate with each other. They are essential in web development
+            because they enable web applications to interact with external
+            services, such as databases, third-party applications, and external
+            data sources, improving functionality and data sharing.
           </p>
         </article>
         <article class="space-y-3 border-b-2 pb-5">
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q4 :</span> What are JavaScript Promises?
+            <span class="text-red-600">Q9 :</span> What is responsive web design
+            and why is it important?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> Promises in JavaScript
-            are objects representing the eventual completion or failure of an
-            asynchronous operation. They allow developers to handle asynchronous
-            code more effectively by chaining `.then()` and `.catch()` methods,
-            improving code readability and manageability over traditional
-            callback-based approaches.
+            <span class="text-green-600">Answer :</span> Responsive web design
+            ensures that web pages adapt to various screen sizes and devices,
+            providing an optimal viewing experience for users. It is important
+            because it improves accessibility, usability, and SEO performance,
+            ensuring users have a seamless experience across desktops, tablets,
+            and mobile devices.
           </p>
         </article>
         <article class="space-y-3 border-b-2 pb-5">
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q5 :</span> How does the `let` keyword
-            differ from `var` in JavaScript?
+            <span class="text-red-600">Q10 :</span> What is version control, and
+            why is it useful in collaborative development?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> The `let` keyword
-            declares block-scoped variables, meaning they are only accessible
-            within the block they are defined. In contrast, `var` declares
-            function-scoped or globally-scoped variables, depending on the
-            context. Additionally, variables declared with `let` are not hoisted
-            to the top of their block, unlike `var`.
+            <span class="text-green-600">Answer :</span> Version control is a
+            system that tracks changes to files and allows multiple developers
+            to work on a project simultaneously without conflicting changes. It
+            is useful in collaborative development because it enables efficient
+            collaboration, keeps a history of changes, and allows developers to
+            revert to previous versions of the code if needed.
           </p>
         </article>
       </section>

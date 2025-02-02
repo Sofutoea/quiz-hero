@@ -120,6 +120,54 @@
             to the top of their block, unlike `var`.
           </p>
         </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q6 :</span> What is the event loop in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> The event loop is a fundamental concept in JavaScript's concurrency model that manages asynchronous operations. It constantly checks the call stack and task queue, moving asynchronous callbacks from the queue to the stack when the stack is empty. This mechanism allows JavaScript to handle non-blocking operations while remaining single-threaded.
+          </p>
+        </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q7 :</span> What is hoisting in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> Hoisting is JavaScript's default behavior of moving declarations to the top of their containing scope during compilation. Variables declared with `var` and function declarations are hoisted, with variables initialized to `undefined`. However, `let` and `const` declarations are not hoisted in the same way, resulting in a temporal dead zone until their declaration is encountered.
+          </p>
+        </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q8 :</span> What's the difference between `null` and `undefined`?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> `undefined` means a variable has been declared but not assigned a value, while `null` is an intentional assignment representing no value. `typeof null` returns "object" (historical quirk), whereas `typeof undefined` returns "undefined". Both are falsy values but considered distinct in JavaScript.
+          </p>
+        </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q9 :</span> Explain `async/await` in JavaScript.
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> Async/await is syntactic sugar built on Promises for writing asynchronous code synchronously. The `async` keyword declares an asynchronous function that returns a Promise. The `await` keyword pauses execution until a Promise settles, either resolving with its value or throwing an error if rejected. This makes asynchronous code easier to read and debug.
+          </p>
+        </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q10 :</span> What's the difference between arrow functions and regular functions?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> Arrow functions (=>) have no `this` binding (inherit from parent scope), can't be used as constructors, don't have `arguments` object, and can't use `yield`. Regular functions have their own `this` context, can be constructed with `new`, and have `arguments`. Arrow functions are better for short callbacks and when lexical `this` is desired.
+          </p>
+        </article>
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q11 :</span> What is the difference between localStorage and sessionStorage?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer :</span> Both provide web storage, but localStorage persists data until explicitly cleared (survives browser restarts), while sessionStorage lasts only for the page session (cleared when tab/window closes). Both are domain-specific and store data as strings with ~5MB capacity. They use simple key-value pairs and are accessible via JavaScript.
+          </p>
+        </article>
       </section>
     </main>
   </body>

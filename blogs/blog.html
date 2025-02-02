@@ -32,6 +32,7 @@
     </script>
   </head>
   <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
     <header class="h-16 flex items-center shadow-sm">
       <nav class="flex justify-between items-center w-9/12 mx-auto">
         <div class="text-zinc-800 font-bold uppercase">
@@ -44,81 +45,89 @@
           href="/index.html"
           class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
         >
-          Exam
+          Home
         </a>
       </nav>
     </header>
+    <!-- Header/Navbar section end -->
 
     <main>
-      <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
-        <article class="space-y-3 border-b-2 pb-5">
+      <!-- <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+        <article>
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q1 :</span> What is JavaScript and what
-            is it used for?
+            <span class="text-red-600">Q1: </span>Question Here
+          </h2>
+          <p><span class="text-red-600">Answer: </span>Answer Here</p>
+        </article>
+      </section> -->
+
+      <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+        <article>
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q1: </span>What is JavaScript?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> JavaScript is a
-            high-level, dynamic programming language commonly used for web
-            development. It allows developers to create interactive elements on
-            websites, such as form validation, dynamic content updates, and
-            animations. JavaScript can be used both on the client-side and
-            server-side.
+            <span class="text-red-600">Answer: </span>JavaScript is a versatile,
+            high-level programming language used primarily for creating
+            interactive web pages. It enables dynamic content, such as
+            animations, form validations, and real-time updates.
           </p>
+          <hr class="border-gray-300 mt-5" />
         </article>
-        <article class="space-y-3 border-b-2 pb-5">
+
+        <article>
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q2 :</span> What are closures in
+            <span class="text-red-600">Q2: </span>What is the difference between
+            var, let, and const?
+          </h2>
+          <p class="text-justify">
+            <span class="text-red-600">Answer: </span>`var` is function-scoped
+            and can be redeclared, `let` is block-scoped and can be reassigned,
+            while `const` is also block-scoped but cannot be reassigned after
+            declaration.
+          </p>
+          <hr class="border-gray-300 mt-5" />
+        </article>
+
+        <article>
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q3: </span>What are arrow functions in
             JavaScript?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> Closures are a feature
-            in JavaScript where an inner function has access to the outer
-            (enclosing) function's variables. This includes the outer function's
-            scope chain, allowing the inner function to remember and access
-            variables from its outer scope even after the outer function has
-            executed.
+            <span class="text-red-600">Answer: </span>Arrow functions are a
+            concise way to write functions in JavaScript. They use the `=>`
+            syntax and do not bind their own `this`, making them useful for
+            callbacks and short function expressions.
           </p>
+          <hr class="border-gray-300 mt-5" />
         </article>
-        <article class="space-y-3 border-b-2 pb-5">
+
+        <article>
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q3 :</span> What is the difference
-            between `==` and `===` in JavaScript?
+            <span class="text-red-600">Q4: </span>What is the difference between
+            == and === in JavaScript?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> In JavaScript, `==` is
-            the equality operator that compares two values for equality after
-            converting both values to a common type. In contrast, `===` is the
-            strict equality operator that compares both the value and the type
-            without performing type conversion. Therefore, `===` is generally
-            preferred for comparison.
+            <span class="text-red-600">Answer: </span>`==` compares values with
+            type conversion, while `===` checks both value and type without
+            conversion, making it a stricter comparison operator.
           </p>
+          <hr class="border-gray-300 mt-5" />
         </article>
-        <article class="space-y-3 border-b-2 pb-5">
+
+        <article>
           <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q4 :</span> What are JavaScript Promises?
+            <span class="text-red-600">Q5: </span>What is the purpose of the
+            async and await keywords?
           </h2>
           <p class="text-justify">
-            <span class="text-green-600">Answer :</span> Promises in JavaScript
-            are objects representing the eventual completion or failure of an
-            asynchronous operation. They allow developers to handle asynchronous
-            code more effectively by chaining `.then()` and `.catch()` methods,
-            improving code readability and manageability over traditional
-            callback-based approaches.
+            <span class="text-red-600">Answer: </span>The `async` keyword
+            declares a function that returns a promise, while `await` pauses
+            execution until the promise resolves, making asynchronous code
+            easier to read and manage.
           </p>
-        </article>
-        <article class="space-y-3 border-b-2 pb-5">
-          <h2 class="text-xl font-bold">
-            <span class="text-red-600">Q5 :</span> How does the `let` keyword
-            differ from `var` in JavaScript?
-          </h2>
-          <p class="text-justify">
-            <span class="text-green-600">Answer :</span> The `let` keyword
-            declares block-scoped variables, meaning they are only accessible
-            within the block they are defined. In contrast, `var` declares
-            function-scoped or globally-scoped variables, depending on the
-            context. Additionally, variables declared with `let` are not hoisted
-            to the top of their block, unlike `var`.
-          </p>
+          <hr class="border-gray-300" />
         </article>
       </section>
     </main>

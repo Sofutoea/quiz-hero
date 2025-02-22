@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero || Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-white font-common">
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">Blog</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a href="/index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Exam
+            </a>
+        </nav>
+    </header>
+    <main>
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+        <article class="space-y-3 border-b-2 pb-5">
+            <h2 class="text-xl font-bold"><span class="text-red-600">Q1:</span> What is JavaScript?</h2>
+            <p text-justify><span class="text-green-600">Answer:</span> JavaScript is a lightweight, interpreted programming
+                language used to create dynamic and interactive web pages. It runs in the browser and allows developers to
+                manipulate HTML, CSS, and handle user interactions.</p>
+        </article>
+    
+        <article class="space-y-3 border-b-2 pb-5">
+            <h2 class="text-xl font-bold"><span class="text-red-600">Q2:</span> What are JavaScript data types?</h2>
+            <p text-justify><span class="text-green-600">Answer:</span> JavaScript has several data types, including
+                Primitive types (String, Number, Boolean, Null, Undefined, Symbol, and BigInt) and Non-Primitive types
+                (Object, Array, and Function).</p>
+        </article>
+    
+        <article class="space-y-3 border-b-2 pb-5">
+            <h2 class="text-xl font-bold"><span class="text-red-600">Q3:</span> What is the difference between 'let', 'var',
+                and 'const'?</h2>
+            <p text-justify><span class="text-green-600">Answer:</span> 'var' is function-scoped and can be redeclared,
+                'let' is block-scoped and cannot be redeclared, and 'const' is also block-scoped but cannot be reassigned
+                after initialization.</p>
+        </article>
+    
+        <article class="space-y-3 border-b-2 pb-5">
+            <h2 class="text-xl font-bold"><span class="text-red-600">Q4:</span> What is the DOM in JavaScript?</h2>
+            <p text-justify><span class="text-green-600">Answer:</span> The DOM (Document Object Model) is a programming
+                interface that represents the structure of an HTML document as a tree. JavaScript can manipulate the DOM to
+                dynamically update content, styles, and structure.</p>
+        </article>
+    
+        <article class="space-y-3 border-b-2 pb-5">
+            <h2 class="text-xl font-bold"><span class="text-red-600">Q5:</span> What is an event in JavaScript?</h2>
+            <p text-justify><span class="text-green-600">Answer:</span> An event is an action or occurrence detected by
+                JavaScript, such as clicks, keypresses, and form submissions. Event listeners can be used to handle these
+                interactions dynamically.</p>
+        </article>
+    </section>
+
+    </main>
+</body>
+
+</html>

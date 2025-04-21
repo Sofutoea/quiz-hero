@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero | Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">Blog</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a
+          href="../index.html"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Home
+        </a>
+      </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+    <main>
+      <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q1 : </span>What is the difference
+            between `var`, `let`, and `const` in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer : </span>`var` is
+            function-scoped, while `let` and `const` are block-scoped. `const`
+            is used for variables that should not be reassigned, whereas `let`
+            allows reassignment.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q2 : </span>What are arrow functions in
+            JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer : </span>Arrow functions provide
+            a shorter syntax for writing functions and do not bind their own
+            `this`. They are useful in callbacks and functional programming.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q3 : </span>What is the purpose of the
+            `this` keyword in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer : </span>The `this` keyword
+            refers to the object that is executing the current function. Its
+            value depends on how the function is called.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q4 : </span>What is the difference
+            between `==` and `===` in JavaScript?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer : </span>`==` compares values
+            after type coercion, while `===` checks both value and type. It is
+            recommended to use `===` for strict comparison.
+          </p>
+        </article>
+
+        <article class="space-y-3 border-b-2 pb-5">
+          <h2 class="text-xl font-bold">
+            <span class="text-red-600">Q5 : </span>What are JavaScript promises?
+          </h2>
+          <p class="text-justify">
+            <span class="text-green-600">Answer : </span>Promises represent the
+            eventual completion (or failure) of an asynchronous operation and
+            its result. They help manage async code in a cleaner way than
+            callbacks.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

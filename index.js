@@ -77,8 +77,14 @@ const displayQuiz = (data) => {
 document.querySelector("#submit").addEventListener("click", () => {
   console.log("clicked");
   if (answers.length < 6) {
+    Swal.fire(
+      "Please answer all questions!",
+      "click 'OK' to continue",
+      "error"
+    ); // show an alert when all ans are not submitted
     return;
   }
+  Swal.fire("Good job!", "Quiz submitted successfully!", "success");
   quizTimer(true);
   answersContainer.innerHTML = `<div class="my-4">
   <i class="fa-solid fa-fan animate-spin text-2xl text-green-600"></i>

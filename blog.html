@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz Hero Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              common: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-white font-common">
+        <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+        <div class="text-zinc-800 font-bold uppercase">
+          <h1 class="text-lg">Quiz <span class="text-green-700">Blog</span></h1>
+          <p class="text-[10px] font-normal capitalize -mt-1">
+            Get ready to Quiz and be amazed!
+          </p>
+        </div>
+        <a
+          href="/index.html"
+          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+        >
+          Exam
+        </a>
+      </nav>
+    </header>
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto space-y-5 py-10">
+        <article class="space-y-3 border-b-2 pb-5">
+  <h2 class="text-xl font-bold">
+    <span class="text-red-500">Q1 :</span> How does JavaScript work in the browser?
+  </h2>
+  <p class="text-justify"><span class="text-green-600">Answer :</span>
+    JavaScript runs inside the browser’s engine (like V8 in Chrome). It interprets the code line by line and updates the DOM to make web pages interactive in real-time.
+  </p>
+</article>
+
+<article class="space-y-3 border-b-2 pb-5">
+  <h2 class="text-xl font-bold">
+    <span class="text-red-500">Q2 :</span> What is the difference between var, let, and const?
+  </h2>
+  <p class="text-justify"><span class="text-green-600">Answer :</span>
+    <code>var</code> has function scope, while <code>let</code> and <code>const</code> have block scope. <code>const</code> values cannot be reassigned, but objects/arrays can still be modified.
+  </p>
+</article>
+
+<article class="space-y-3 border-b-2 pb-5">
+  <h2 class="text-xl font-bold">
+    <span class="text-red-500">Q3 :</span> What is the DOM in web development?
+  </h2>
+  <p class="text-justify"><span class="text-green-600">Answer :</span>
+    The DOM (Document Object Model) is a tree-like structure that represents an HTML page. JavaScript can access and modify this structure to change content dynamically.
+  </p>
+</article>
+
+<article class="space-y-3 border-b-2 pb-5">
+  <h2 class="text-xl font-bold">
+    <span class="text-red-500">Q4 :</span> Why is JSON important in JavaScript?
+  </h2>
+  <p class="text-justify"><span class="text-green-600">Answer :</span>
+    JSON is a lightweight data format used to store and exchange data. It is easy to parse in JavaScript, making it essential for APIs and server communication.
+  </p>
+</article>
+
+<article class="space-y-3 border-b-2 pb-5">
+  <h2 class="text-xl font-bold">
+    <span class="text-red-500">Q5 :</span> What is the purpose of event listeners?
+  </h2>
+  <p class="text-justify"><span class="text-green-600">Answer :</span>
+    Event listeners let JavaScript respond to user actions like clicks, typing, or scrolling. They make web pages interactive and responsive to user input.
+  </p>
+</article>
+
+    </section>
+</body>
+</html>

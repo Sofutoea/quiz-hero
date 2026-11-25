@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -42,25 +42,28 @@
       <nav class="flex justify-between items-center w-9/12 mx-auto">
         <div class="text-zinc-800 font-bold uppercase">
           <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
-          <p class="text-[10px] font-normal capitalize -mt-1">
-            Get ready to Quiz and be amazed!
-          </p>
+          <p class="text-[10px] font-normal capitalize -mt-1">Get ready to Quiz and be amazed!</p>
         </div>
-        <a
-          href="/blogs/blog.html"
-          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
-        >
-          Blog
-        </a>
+        <div>
+          <a
+            href="/blogs/blog.html"
+            class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white mr-2"
+          >
+            Blog
+          </a>
+          <a
+            href="/contact/contact.html"
+            class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
+          >
+            Contact
+          </a>
+        </div>
       </nav>
     </header>
     <!-- Header/Navbar section end -->
 
     <!-- Landing page content start -->
-    <section
-      class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center"
-      id="rulesContainer"
-    >
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center" id="rulesContainer">
       <h1 class="text-center my-8 text-xl">Welcome to Quiz Hero</h1>
       <div class="lg:w-[80%] md:w-[90%] w-[90%] mx-auto text-left">
         <h1 class="text-md text-gray-800 text-center">Quiz Rules:</h1>
@@ -75,47 +78,36 @@
             button below.
           </li>
           <li class="my-4">
-            <span class="bg-orange-200 px-2 rounded">Step 2:</span> After
-            clicking Start button, you will see a page with 3s count down, wait
-            until the count is over!
+            <span class="bg-orange-200 px-2 rounded">Step 2:</span> After clicking Start button, you
+            will see a page with 3s count down, wait until the count is over!
           </li>
           <li class="my-4">
-            <span class="bg-orange-200 px-2 rounded">Step 3:</span> You will see
-            the questions with 4 options for each, and counter will start and
-            which will count your exam time.
+            <span class="bg-orange-200 px-2 rounded">Step 3:</span> You will see the questions with
+            4 options for each, and counter will start and which will count your exam time.
           </li>
           <li class="my-4">
-            <span class="bg-orange-200 px-2 rounded">Step 4:</span> You have to
-            select the correct answer, and you have 60 seconds to answer 6
-            questions.
+            <span class="bg-orange-200 px-2 rounded">Step 4:</span> You have to select the correct
+            answer, and you have 60 seconds to answer 6 questions.
           </li>
           <li class="my-4">
-            <span class="bg-orange-200 px-2 rounded">Step 5:</span> Click on the
-            submit quiz button, when you are done with all the answers.
+            <span class="bg-orange-200 px-2 rounded">Step 5:</span> Click on the submit quiz button,
+            when you are done with all the answers.
           </li>
         </ul>
         <!-- Quiz rules end -->
       </div>
-      <button class="bg-green-600 px-20 py-2 text-white rounded" id="startQuiz">
-        Start Quiz
-      </button>
+      <button class="bg-green-600 px-20 py-2 text-white rounded" id="startQuiz">Start Quiz</button>
     </section>
     <!-- Landing page content start -->
 
     <!-- Top bar of question page start -->
-    <section
-      class="shadow-sm my-5 py-2 sticky top-0 bg-white z-10 hidden"
-      id="alertContainer"
-    >
-      <div
-        class="w-9/12 mx-auto flex md:flex-row flex-col justify-between items-center"
-      >
+    <section class="shadow-sm my-5 py-2 sticky top-0 bg-white z-10 hidden" id="alertContainer">
+      <div class="w-9/12 mx-auto flex md:flex-row flex-col justify-between items-center">
         <div class="text-xs font-normal">
-          <span class="text-red-700">Attention!</span> You have 60 seconds to
-          answer 6 questions.
+          <span class="text-red-700">Attention!</span> You have 60 seconds to answer 6 questions.
           <br />
-          Please keep an eye on the timer and make sure to answer all questions
-          before time runs out.
+          Please keep an eye on the timer and make sure to answer all questions before time runs
+          out.
         </div>
         <!-- Timer part Start -->
         <div class="flex items-center">
@@ -135,10 +127,7 @@
     <!-- Top bar of question page end -->
 
     <!-- Quiz section start -->
-    <section
-      class="md:w-9/12 w-[90%] md:flex-row flex-col mx-auto hidden"
-      id="submitContainer"
-    >
+    <section class="md:w-9/12 w-[90%] md:flex-row flex-col mx-auto hidden" id="submitContainer">
       <!-- Question section start -->
       <div class="md:w-[70%] w-full">
         <div class="duration-500" id="quizContainer"></div>
@@ -156,10 +145,7 @@
           <h1 class="mt-5 mb-2 text-lg capitalize font-medium text-gray-700">
             All Done! Ready to submit your quiz?
           </h1>
-          <button
-            class="bg-green-600 text-white w-full py-2 rounded"
-            id="submit"
-          >
+          <button class="bg-green-600 text-white w-full py-2 rounded" id="submit">
             Submit Quiz
           </button>
         </div>
@@ -174,9 +160,7 @@
       id="countDownContainer"
     >
       <div class="text-center">
-        <h1 class="text-gray-200 text-3xl mb-5">
-          <span id="counter">3</span>s
-        </h1>
+        <h1 class="text-gray-200 text-3xl mb-5"><span id="counter">3</span>s</h1>
         <h1 class="text-gray-200 text-xl animate-pulse">
           Stay Seated, Stay Sharp. Starting Quiz In a moment!
         </h1>

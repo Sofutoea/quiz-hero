@@ -139,7 +139,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   let x = setTimeout(() => {
     showAnswers(answers);
     displayResult.innerHTML = `<div
-    class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
+    class="h-55 w-55 mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
     <h3 class="text-xl ${grade.color}">${grade.status}</h3>
     <h1 class="text-3xl font-bold my-2">
